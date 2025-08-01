@@ -1,0 +1,136 @@
+<!DocTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Navigation Bar</title>
+    <style>
+       html,
+       body{
+        height: 100%;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+
+       } 
+       body{
+        display: flex;
+        font-family:"Arial", sans-serif;
+       }
+       div{
+        cursor: pointer;
+        margin: auto;
+        font-size: 5vmin;
+        font-weight: 400;
+        transition: font-weight 250ms ease-in-out;
+
+       }
+       div:hover{
+            font-weight:900;
+       }
+       html{
+        scrollbar-width: normal;
+        scrollbar-color: #777 #555;
+       }
+       ::-webkit-scrollbar-thumb{
+        width: 15px;
+        background-color: red;
+       }
+       ::webkit-scrollbar-track{
+        border-radius: 3px;
+        background: green;
+       }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <button><i class="fa-solid fa-user"></i>Home</button>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">Coursera</a> </div>
+            <ul>
+                <li><a href="#">
+                <a href="default.asp">
+                    <img src="https://icon-library.com/images/page-icon-png/page-icon-png-21.jpg"alt="test" width="50"height="50">
+                </a>About</a></li>
+                <li><a href="#">Project details</a>
+                    <ul>
+                        <li> <a href="default.asp">
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/free-1-icon-download-in-svg-png-gif-file-formats--one-digital-number-numerical-characters-and-numbers-pack-sign-symbols-icons-36018.png?f=webp&w=256"alt="1" width="50"height="50">
+                            </a> 1</li>
+                        <li>
+                        <a href="default.asp">
+                            <img src="https://img.favpng.com/17/12/11/number-2-white-number-2-TaeZjsKk_t.jpg"alt="2" width="50"height="50">
+                        </a>2</li>
+        
+                        <li>
+                        <a href="default.asp">
+                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/controller-and-music/number-three-round-icon.png"alt="3" width="50"height="50">
+                        </a>3</li>
+
+                </li>
+                <li><a href="#">Skills</a>
+                    <ul>
+                        <li> <a href="default.asp">
+                                <img src="https://icon-library.com/images/coding-icon-png/coding-icon-png-16.jpg"alt="programming" width="50"height="50">
+                            </a> programming</li>
+                        <li>
+                        <a href="default.asp">
+                            <img src="https://cdn.iconscout.com/icon-pack/preview-mockup/communication-icon-pack-download-in-svg-png-gif-file-formats--message-chat-chatting-mail-letter-network-icons-40441.png?f=webp&h=240&modified_at=1598530294"alt="comuncation" width="50"height="50">
+                        </a>comuncation</li>
+        
+                        <li>
+                        <a href="default.asp">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/057/720/475/small/serene-classic-teamwork-icon-with-connected-people-transparent-background-authentic-png.png"alt="team-work" width="50"height="50">
+                        </a>team-work</li>
+        
+                        <li>
+                        <a href="default.asp">
+                            <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/logical-thinking-icon-download-in-svg-png-gif-file-formats--creative-consideration-reasoning-lateral-analytical-task-pack-business-icons-10063379.png?f=webp&w=128"alt="logical thinking" width="50"height="50">
+                        </a>logical thinking</li>
+        
+                        <li>
+                        <a href="default.asp">
+                            <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/critical-thinking-icon-download-in-svg-png-gif-file-formats--analysis-logic-reasoning-evaluation-intuition-pack-editorial-icons-11604262.png?f=webp&w=128"alt="critical thinking" width="50"height="50">
+                        </a>critical thinking</li>        
+
+
+                    </ul>
+                </li>
+                <li><a href="#">Recommendations</a></li>  
+                <ul>
+                    <li> <a href="default.asp">
+                            <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/online-course-icon-download-in-svg-png-gif-file-formats--education-learning-e-pack-school-icons-11610728.png?f=webp&w=128"alt="courses" width="50"height="50">
+                        </a> courses</li>
+                    <li>
+                    <a href="default.asp">
+                        <img src="https://i.pinimg.com/originals/6f/17/db/6f17db8fa6170c57e4e6030b6f921aa0.jpg"alt="books" width="50"height="50">
+                    </a>reading books</li>
+    
+                    <li>
+                    <a href="default.asp">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/021/673/247/small/push-pin-icon-in-square-gradient-colors-thumbtack-signs-illustration-png.png"alt="coding" width="50"height="50">
+                    </a>coding</li>
+                    <li>
+                        <a href="default.asp">
+                            <img src=""alt="coding" width="50"height="50">
+                        </a>new recommendation</li>
+
+                <button id="dialog">recommendation</button>
+                <div class="modal" id="modal">
+                    <h2> cool tutorial</h2>
+                    <p>
+                        Thank you for leaving a recommendation!
+                    </p>
+                    <button id="closemodal"> close </button>
+
+                </div>
+              
+    
+          
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
