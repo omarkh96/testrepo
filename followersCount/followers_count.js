@@ -9,12 +9,21 @@ function increaseCount() {
 function displayCount() {
 document.getElementById('countDisplay').innerHTML=count; // Display the count in the HTML
 }
-
-function checkCountValue(){
+async function  checkCountValue(){
     if (count === 10 ){
-        alert ("your insta poat gained 10 followers")
-    } else if (count ===20){
-        alert("your instagram gained 20 followers")
+        await alert ("your insta poat gained 10 followers")
+    }else if (count === 0) {
+        alert ("reset");
+    }
+    else if (count ===20){
+        await alert("your instagram gained 20 followers")
     }
 
+}
+
+
+function resetcount (){
+    count = 0;
+    displayCount();
+    checkCountValue ();
 }
